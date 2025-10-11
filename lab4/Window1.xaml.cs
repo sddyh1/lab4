@@ -28,13 +28,11 @@ namespace lab4
 
 
 
-            // Сбрасываем все TextBox в колонке к маленькому стилю
             foreach (TextBox child in parentPanel.Children.OfType<TextBox>())
             {
                 child.Style = (Style)Resources["SmallTextBoxStyle"];
             }
 
-            // Устанавливаем большому TextBox соответствующий стиль
             currentTextBox.Style = (Style)Resources["LargeTextBoxStyle"];
         }
     }
